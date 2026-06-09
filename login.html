@@ -1,0 +1,54 @@
+<div class="card">
+
+    <nav class="tabs">
+      <button class="tab-btn active" id="tab-login" onclick="mostrarAba('login')">
+        Login
+      </button>
+      <button class="tab-btn" id="tab-cadastro" onclick="mostrarAba('cadastro')">
+        Cadastro
+      </button>
+    </nav>
+
+    <div class="form-wrap">
+      <div class="badge">Desafio JavaScript</div>
+
+      <div id="painel-login" class="form-panel active">
+
+        <p class="form-title">// acesse sua <span>conta</span></p>
+
+        <form id="form-login" novalidate>
+
+          <div class="field">
+            <label for="login-usuario">Usuário</label>
+            <input
+              type="text"
+              id="login-usuario"
+              placeholder="Digite seu usuário"
+              autocomplete="username"
+            >
+            <div class="campo-erro" id="erro-login-usuario"></div>
+          </div>
+
+          <div class="field">
+            <label for="login-senha">Senha</label>
+            <input
+              type="password"
+              id="login-senha"
+              placeholder="Digite sua senha"
+              autocomplete="current-password"
+            >
+            <div class="campo-erro" id="erro-login-senha"></div>
+          </div>
+
+          <button id="btn-primary" type="submit" class="btn-primary">Entrar</button>
+
+          <div class="feedback" id="feedback-login"></div>
+
+        </form>
+
+        <div class="switch-link">
+          Não tem conta?
+          <button onclick="mostrarAba('cadastro')">Criar conta</button>
+        </div>
+
+      </div>

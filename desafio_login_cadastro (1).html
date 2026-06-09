@@ -427,6 +427,30 @@
 
     // Escreva seu código aqui ↓
 
+      const usuariologin = document.getElementById("login-usuario");
+      const senhalogin = document.getElementById("login-senha");
+      const formulariologin = document.getElementById("form-login");
+      const feedback = document.getElementById("feedback-login");
+      const botaoenter = document.getElementById("btn-primary");
+
+    function ValidarLogin(e){
+      e.preventDefault;
+      if(usuariologin.value === usuarioFixo && senhalogin.value === senhaFixa){
+        //feedbackLogin.textContent = "Credenciais válidas";
+        alert("Credenciais válidas")
+      }else{
+        //feedbackLogin.textContent = "Credenciais inválidas";
+        alert("Credenciais inválidas")
+      }
+
+    }
+
+    formulariologin.addEventListener("submit", ValidarLogin);
+
+    //////////////////daqui pra baixo CADASTRO/////////////////
+    
+    const formulariocadastro = document.getElementById("form-cadastro");
+    const cademail = document.getElementById("cad-email");
 
   </script>
 </body>
